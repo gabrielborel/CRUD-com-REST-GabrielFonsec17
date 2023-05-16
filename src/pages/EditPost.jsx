@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./EditPost.css";
 
 export default function EditPost() {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
@@ -29,6 +30,7 @@ export default function EditPost() {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
+    navigate("/");
   };
 
   return (

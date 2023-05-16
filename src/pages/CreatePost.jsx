@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import "./CreatePost.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CreatePost() {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -24,6 +26,7 @@ export default function CreatePost() {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
+    navigate("/");
   };
 
   return (
