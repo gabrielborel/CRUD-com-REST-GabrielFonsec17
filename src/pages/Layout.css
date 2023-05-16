@@ -1,0 +1,14 @@
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: center;
+}
+
+.nav {
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}

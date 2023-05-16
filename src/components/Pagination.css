@@ -1,0 +1,9 @@
+.pagination {
+  margin: 1rem auto;
+  width: 200px;
+}
+
+.pages-indicator-container {
+  display: flex;
+  gap: 0.25rem;
+}

@@ -1,0 +1,28 @@
+main {
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: center;
+}
+
+form {
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+form > div > label {
+  font-size: 1rem;
+}
+
+form > div > input {
+  border-radius: 4px;
+  padding: 4px;
+}
